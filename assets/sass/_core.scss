@@ -705,6 +705,7 @@ body.home {
   }
   .logo {
     width: 500px;
+    padding-left: 1vw;
     @media only screen and (min-width: $tabwidth) {
       padding-left: 5vw;
     }
@@ -724,8 +725,11 @@ body.home {
     background-repeat: no-repeat;
     // width: 275px;
     width: 290px;
-    height: 60px;
+    height: 33px;
     text-decoration: none;
+    @media only screen and (min-width: $tabwidth) {
+      height: 60px;
+    }
     span {
       display: inline-block;
       font-family: $font_heading;
@@ -2678,20 +2682,24 @@ section.coursemap {
   &.home-pol {
     height: auto;
     &:nth-child(even) {
-      transform: rotate(12deg) scale(.8);
+      // transform: rotate(12deg) scale(.8);
+      transform: rotate(12deg);
       &:hover {
-        transform: rotate(7deg) scale(.85);
+        // transform: rotate(7deg) scale(.85);
+        transform: rotate(7deg);
       }
     }
     &:nth-child(odd) {
-      transform: rotate(-9deg) scale(.8);
+      // transform: rotate(-9deg) scale(.8);
+      transform: rotate(-9deg);
       &:hover {
-        transform: rotate(-5deg) scale(.85);
+        // transform: rotate(-5deg) scale(.85);
+        transform: rotate(-5deg);
       }
     }
     .behind-polaroid {
-      transform: scale(.8);
-      top: -20px;
+      transform: scale(.7);
+      top: -25px;
       @media only screen and (min-width: $tabwidth) {
         transform: scale(.8);
       }
@@ -2719,11 +2727,14 @@ section.coursemap {
     .pol-info {
       position: absolute;
       width: 100%;
-      bottom: 40px;
+      bottom: 15px;
       left: 0;
       text-align: center;
       color: #000;
       font-family: TuckfestHand;
+      @media only screen and (min-width: $tabwidth) {
+        bottom: 40px;
+      }
     }
     .tape {
       position: absolute;
