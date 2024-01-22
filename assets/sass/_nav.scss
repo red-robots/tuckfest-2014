@@ -396,7 +396,12 @@ nav.mobilemenu {
       }
     }
   }
-  ul.sub-menu a, ul.sub-menu li.current_page_item a {color: #fff}
+  ul.sub-menu a, ul.sub-menu li.current_page_item a {
+    color: #fff;
+    @media only screen and (min-width: $tabwidth) {
+      // color: #;
+    }
+  }
   ul.sub {
     list-style-type: none;
     margin-top: 40px;

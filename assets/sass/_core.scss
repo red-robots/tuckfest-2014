@@ -2283,9 +2283,12 @@ section.schedule-music {
       font-size: 13px;
       font-weight: 500;
       text-transform: uppercase;
-      color: #fff;
+      color: #000;
       padding: 11px 0 13px;
       position: relative;
+      @media only screen and (max-width: $tabwidth) {
+        color: #fff;
+      }
       &:after {
         content:"";
         width: 0;
