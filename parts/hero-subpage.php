@@ -8,6 +8,9 @@ $btnLink = ( isset($register_button['url']) && $register_button['url'] ) ? $regi
 $btnText = ( isset($register_button['title']) && $register_button['title'] ) ? $register_button['title'] : '';
 $btnTarget = ( isset($register_button['target']) && $register_button['target'] ) ? $register_button['target'] : '_self';
 
+if( is_page('athletes') ) {
+  $button = 'off';
+}
 // echo '<pre>';
 // print_r($banner_image);
 // echo '</pre>';

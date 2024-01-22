@@ -1396,7 +1396,7 @@ nav.mobilemenu .social a:last-of-type{margin-right:0}
 nav.mobilemenu .social a:hover svg path,nav.mobilemenu .social a:hover svg circle{fill:#b7ac7f}
 nav.mobilemenu .social a svg{width:100%;height:100%}
 nav.mobilemenu .social a svg path,nav.mobilemenu .social a svg circle{fill:#fff;-webkit-transition:all .3s ease;transition:all .3s ease}
-nav.mobilemenu ul.sub-menu a,nav.mobilemenu ul.sub-menu li.current_page_item a{color:#000 !important}
+nav.mobilemenu ul.sub-menu a,nav.mobilemenu ul.sub-menu li.current_page_item a{color:#fff}
 nav.mobilemenu ul.sub{list-style-type:none;margin-top:40px;-webkit-transform:translateY(30px);transform:translateY(30px);opacity:0;-webkit-transition:all .4s ease;transition:all .4s ease}
 nav.mobilemenu ul.sub li{margin-bottom:10px}
 nav.mobilemenu ul.sub li:last-of-type{margin-bottom:0}
@@ -1449,6 +1449,7 @@ body.home .site{padding-top:50px}
 .home-banner{width:100%}
 .home-banner figure{margin:0;width:100%;float:left}
 .home-banner figure img{width:100%;height:auto;float:left}
+.home-banner figure img.desktop{display:none}
 .home-buttons{width:100%;float:left;padding-top:64px;padding-bottom:60px}
 .home-buttons a{text-decoration:none;display:block;color:#fff;font-size:18px;padding:10px 35px;width:100%;text-align:center;margin:0 0 20px 0}
 .home-buttons a:hover{background-color:#000}
@@ -1482,16 +1483,16 @@ body.home .site{padding-top:50px}
 #competitions.competitions_svg.button a #CompLayer_5{display:none;width:0;opacity:0;-webkit-transform:translateX(1vw);transform:translateX(1vw)}
 #competitions.competitions_svg.button a #CompLayer_6{-webkit-transition:all ease .3s;transition:all ease .3s}
 .mobile-menu{display:none}
-body.subpage .site-header .wrapper.wide{max-width:100%;width:100%;padding:10px 0}
-body.subpage .site-header .flexwrap{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-body.subpage .site-header #site-navigation{display:inline-block;width:auto;padding-right:5vw}
-body.subpage .site-header #site-navigation #navigation{padding:0}
-body.subpage .site-header #site-navigation #navigation ul.menu>li>a{padding:25px 20px 18px}
-body.subpage .logo{width:500px}
-body.subpage .logo img{width:100%}
-body.subpage .site-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-size:cover;background-position:top left;background-repeat:no-repeat;width:290px;height:60px;text-decoration:none}
-body.subpage .site-logo span{display:inline-block;font-family:"BrandonMedItalic",sans-serif;font-size:2.1rem;font-weight:normal;line-height:1.1;letter-spacing:3px;text-transform:uppercase;padding-right:35px}
-body.subpage #primary{min-height:30em}
+.site-header .wrapper.wide{max-width:100%;width:100%;padding:10px 0}
+.site-header .flexwrap{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.site-header #site-navigation{display:inline-block;width:auto;padding-right:5vw}
+.site-header #site-navigation #navigation{padding:0}
+.site-header #site-navigation #navigation ul.menu>li>a{padding:25px 20px 18px}
+.logo{width:500px}
+.logo img{width:100%}
+.site-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-size:cover;background-position:top left;background-repeat:no-repeat;width:290px;height:60px;text-decoration:none}
+.site-logo span{display:inline-block;font-family:"BrandonMedItalic",sans-serif;font-size:2.1rem;font-weight:normal;line-height:1.1;letter-spacing:3px;text-transform:uppercase;padding-right:35px}
+#primary{min-height:30em}
 .banner-subpage{width:100%;float:left;position:relative;text-align:center}
 .banner-subpage .banner-image{width:100%;float:left}
 .banner-subpage .banner-image img{width:100%}
@@ -1505,9 +1506,7 @@ body.subpage #primary{min-height:30em}
 .entry-content.page-content{max-width:800px;padding-top:40px;margin:0 auto;padding:20px;clear:both}
 .spotify-wrap{width:100%;margin:40px 0 0 0;float:left}
 .entry-title{background:#000;position:relative;text-align:center;position:relative;font-family:"TuckfestHand",sans-serif;color:#ff0}
-.entry-title:before{left:0}
-.entry-title:after{right:0}
-.entry-title h1{font-family:"TuckfestHand",sans-serif;font-size:2.5rem;font-weight:normal;line-height:1.2;text-transform:uppercase;letter-spacing:2px;margin:0;padding:14px 5vw 12px;display:inline-block;width:auto;position:relative;z-index:10}
+.entry-title h1{font-family:"TuckfestHand",sans-serif;font-size:1.7rem;font-weight:normal;line-height:1.2;text-transform:uppercase;letter-spacing:2px;margin:0;padding:14px 5vw 12px;display:inline-block;width:auto;position:relative;z-index:10}
 .default-template{width:100%;float:left}
 .feeds-wrapper{padding:50px 0}
 .feeds-wrapper .columns{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
@@ -1591,7 +1590,6 @@ body.subpage #primary{min-height:30em}
 #primary.single-competition .result-section .imagecol,#primary.single-competition .result-section .textcol{width:100%}
 #primary.single-competition .result-section .imagecol img{width:100%;height:auto}
 #primary.single-competition .resultsCol .title-orange{margin-bottom:20px}
-#primary.single-competition .resultsCol .coming-soon{font-size:16px}
 #primary.single-competition .resultsCol .catname{font-size:15px;font-weight:600;line-height:1.2;margin:0 0 5px;letter-spacing:0}
 #primary.single-competition .resultsCol .result-item{margin-bottom:20px}
 #primary.single-competition .resultsCol .result-list .item{margin:5px 0}
@@ -1695,7 +1693,7 @@ section.schedule-music .col{-ms-flex-preferred-size:22%;flex-basis:22%}
 #subNavs ul.sub-menu li{display:inline-block;float:left;text-align:left;padding:0 14px}
 #subNavs ul.sub-menu li.athlete-link{background-color:rgba(255,255,255,0.3)}
 #subNavs ul.sub-menu.active{display:inline-block}
-#subNavs ul.sub-menu a{display:inline-block;text-decoration:none;font-size:13px;font-weight:500;text-transform:uppercase;color:#000;padding:11px 0 13px;position:relative}
+#subNavs ul.sub-menu a{display:inline-block;text-decoration:none;font-size:13px;font-weight:500;text-transform:uppercase;color:#fff;padding:11px 0 13px;position:relative}
 #subNavs ul.sub-menu a:after{content:"";width:0;height:2px;position:absolute;bottom:11px;left:0;-webkit-transition:all ease .2s;transition:all ease .2s}
 #subNavs ul.sub-menu a:hover:after{width:50%}
 section.faqs{width:100%;clear:both;padding:40px 20px}
@@ -1703,7 +1701,7 @@ section.faqs{width:100%;clear:both;padding:40px 20px}
 .question{width:auto;float:left;margin:10px;font-weight:bold;font-size:20px;cursor:pointer;line-height:1.3;position:relative;padding:0 0 0 20px;-webkit-transition:all ease .3s;transition:all ease .3s}
 .question-image{width:15px;height:15px;position:absolute;left:0;top:3px;background-image:url(images/faq.png);background-repeat:no-repeat;background-position:0 0}
 .question-image.close{background-position:-15px 0}
-.answer{width:auto;float:left;margin:10px;font-size:14px;line-height:1.3;padding:20px;display:none;background-color:#ff0;color:#000}
+.answer{width:auto;float:left;margin:10px;font-size:14px;line-height:1.3;padding:20px;display:none;background-color:#fff;color:#000}
 .answer a{color:#000;text-decoration:underline}
 .plus-minus-toggle{cursor:pointer;height:21px;position:absolute;width:21px;left:-10px;top:40%;z-index:2}
 .plus-minus-toggle:before,.plus-minus-toggle:after{content:'';height:5px;left:0;position:absolute;top:0;width:21px;-webkit-transition:-webkit-transform 500ms ease;transition:-webkit-transform 500ms ease;transition:transform 500ms ease;transition:transform 500ms ease,-webkit-transform 500ms ease}
@@ -1749,24 +1747,36 @@ section.coursemap{width:100%;margin:0 0 20px 0;padding-top:20px;float:left}
 .register-button{display:inline-block;text-align:center;text-decoration:none;font-weight:800;font-size:1em;text-transform:uppercase;color:#fff;margin:0 auto;-webkit-transform:translateY(-40px);transform:translateY(-40px)}
 .register-button a{display:block;text-decoration:none;color:#000;background-size:200% auto;-webkit-box-shadow:0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0,0,0,0.08);box-shadow:0 4px 6px rgba(50,50,93,0.11),0 1px 3px rgba(0,0,0,0.08);background-image:-webkit-gradient(linear,left top,right top,from(#ff0),color-stop(50%,#a0a000),to(#ff0));background-image:linear-gradient(to right,#ff0 0,#a0a000 50%,#ff0 100%);-webkit-transition:.5s;transition:.5s;padding:20px 50px;-webkit-transform:scale(1);transform:scale(1)}
 .register-button a:hover{background-position:right center;-webkit-transform:scale(1.1);transform:scale(1.1)}
-.polaroid{width:600px;height:653px;position:relative;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transform-style:preserve-3D;transform-style:preserve-3D;margin:0 auto;-webkit-transition:all ease .2s;transition:all ease .2s}
+.polaroid{width:300px;height:327px;position:relative;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transform-style:preserve-3D;transform-style:preserve-3D;margin:0 auto;-webkit-transition:all ease .2s;transition:all ease .2s}
 .polaroid.home-pol{height:auto}
 .polaroid.home-pol:nth-child(even){-webkit-transform:rotate(12deg) scale(0.8);transform:rotate(12deg) scale(0.8)}
 .polaroid.home-pol:nth-child(even):hover{-webkit-transform:rotate(7deg) scale(0.85);transform:rotate(7deg) scale(0.85)}
 .polaroid.home-pol:nth-child(odd){-webkit-transform:rotate(-9deg) scale(0.8);transform:rotate(-9deg) scale(0.8)}
 .polaroid.home-pol:nth-child(odd):hover{-webkit-transform:rotate(-5deg) scale(0.85);transform:rotate(-5deg) scale(0.85)}
-.polaroid.home-pol .behind-polaroid{-webkit-transform:scale(0.8);transform:scale(0.8)}
+.polaroid.home-pol .behind-polaroid{-webkit-transform:scale(0.8);transform:scale(0.8);top:-20px}
 .polaroid a:hover{background:0}
 .polaroid:nth-child(even){-webkit-transform:rotate(12deg);transform:rotate(12deg)}
 .polaroid:nth-child(odd){-webkit-transform:rotate(-9deg);transform:rotate(-9deg)}
 .polaroid .p-pic{position:relative;width:100%;height:100%;z-index:2}
 .polaroid .p-pic img{width:100%}
-.polaroid .p-pic .pol-info{position:absolute;width:100%;bottom:40px;left:0;text-align:center;color:#000}
-.polaroid .p-pic .tape{position:absolute;top:-37px;right:210px;background-size:cover;width:150px}
-.polaroid .p-pic .tape:nth-child(even){height:65px;background-image:url("images/tape-1.png")}
-.polaroid .p-pic .tape:nth-child(odd){height:65px;background-image:url("images/tape-1.png")}
-.behind-polaroid{width:100%;overflow:hidden;z-index:1;position:absolute;left:0;top:0;max-height:600px}
+.polaroid .p-pic .pol-info{position:absolute;width:100%;bottom:40px;left:0;text-align:center;color:#000;font-family:TuckfestHand}
+.polaroid .p-pic .tape{position:absolute;top:-17px;right:113px;background-size:cover;width:70px}
+.polaroid .p-pic .tape:nth-child(even),.polaroid .p-pic .tape:nth-child(odd){height:30px;background-image:url("images/tape-1.png")}
+.behind-polaroid{width:100%;overflow:hidden;z-index:1;position:absolute;left:0;top:-0;max-height:600px}
 .behind-polaroid img{width:100%}
+section.competitions,section.registration-boxes{width:100%;clear:both}
+section.competitions h2,section.registration-boxes h2{width:100%;margin:80px 0;text-align:center;color:#ff0;font-family:TuckfestHand}
+section.registration-boxes .reg-wrap{margin:0 auto}
+section.registration-boxes .reg-wrap .reg-box{background-color:#fff;color:#000;width:100%}
+section.registration-boxes .reg-wrap .reg-box h3{width:100%;display:block;background-color:#ff0;color:#000;font-family:TuckfestHand;padding:20px 10px;text-align:center;border-bottom:5px solid #000}
+section.registration-boxes .reg-wrap .reg-box .content{padding:20px}
+#mc_embed_shell{width:100%;margin:60px auto 60px auto;text-align:center}
+#mc_embed_shell h2{color:#ff0;font-family:TuckfestHand}
+#mc_embed_shell input#mc-embedded-subscribe{background-color:#ff0;color:#000;padding:11px 25px;border-radius:0;border:0;display:inline-block;width:auto;color:#000}
+#mc_embed_shell input#mce-EMAIL{padding:10px 25px;display:inline-block;width:auto;color:#000}
+.coming-soon{width:100%;height:100vh;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:#000}
+.coming-soon .cs-text{padding:40px 20px;background-color:#ff0}
+.coming-soon h2{font-family:TuckfestHand;font-size:24px}
 @media screen and (min-width:600px){#cboxTitle{position:absolute;top:0;left:0;text-align:left;width:20%;font-weight:bold;color:#fff;padding:8% 2% 8% 2%;line-height:1.3;font-size:20px}
 }@media(min-width:600px){section.photo-gallery .gal-thumb{width:50%}
 }@media(min-width:667px){nav.mobilemenu{padding:120px 90px 70px 90px}
@@ -1790,9 +1800,12 @@ section.photo-gallery .gal-thumb{width:33.333%}
 .flexcol-content .flexcol{padding:0}
 }@media only screen and (min-width:820px){body.home .site{padding-top:0}
 #site-navigation #navigation{display:block}
-body.subpage .logo{padding-left:5vw}
+.home-banner figure img.mobile{display:none}
+.home-banner figure img.desktop{display:block}
+.logo{padding-left:5vw}
 .banner-subpage .banner-image.mobile{display:none}
 .banner-subpage .banner-image.desktop{display:block}
+.entry-title h1{font-size:2.5rem}
 .feeds-wrapper{padding:50px 0 400px 0}
 .repeatable-content-blocks .content-block{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-line-pack:start;align-content:flex-start}
 .repeatable-content-blocks .content-block .textcol.athlete{padding:100px 30px}
@@ -1801,6 +1814,14 @@ body.subpage .logo{padding-left:5vw}
 .flexcol-content .flexcol .inside{padding:5vw}
 .flexcol-content.half .flexcol{width:50%}
 div.vendors .ven{width:22%;-ms-flex-preferred-size:22%;flex-basis:22%;margin:10px 10px 20px 10px}
+.polaroid{width:600px;height:653px}
+.polaroid.home-pol .behind-polaroid{-webkit-transform:scale(0.8);transform:scale(0.8)}
+.polaroid .p-pic .tape{width:150px;top:-37px;right:210px}
+.polaroid .p-pic .tape:nth-child(even),.polaroid .p-pic .tape:nth-child(odd){height:65px}
+section.registration-boxes .reg-wrap{width:60%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+section.registration-boxes .reg-wrap .reg-box{-ms-flex-preferred-size:48%;flex-basis:48%;width:48%}
+.coming-soon .cs-text{padding:40px}
+.coming-soon h2{font-size:40px}
 }@media screen and (min-width:820px){#primary.single-competition .event-info .comp-footer{text-align:left}
 #primary.single-competition .event-info .comp-footer .other-links-btn{margin-right:10px;margin-left:10px;width:auto}
 ul.tabs-info li{width:auto;margin:0 2px}

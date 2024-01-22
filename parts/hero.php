@@ -1,6 +1,6 @@
 <?php if( is_front_page() || is_home() ) { 
   $home_banner = get_field('home_banner');
-  
+  $mobile_home_banner = get_field('mobile_home_banner');
   $buttons = get_field('home_buttons');
   // echo '<pre>';
   // print_r($buttons);
@@ -14,7 +14,7 @@
       
         <figure>
           <img class="desktop" src="<?php echo $home_banner['url'] ?>" alt="<?php echo $home_banner['title'] ?>">
-          <!-- <img class="mobile" src="<?php echo $home_banner_mobile['url'] ?>" alt="<?php echo $home_banner_mobile['title'] ?>"> -->
+          <img class="mobile" src="<?php echo $mobile_home_banner['url'] ?>" alt="<?php echo $mobile_home_banner['title'] ?>">
         </figure>
       
     </div>

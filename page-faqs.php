@@ -14,20 +14,21 @@ $comingSoon = get_field('coming_soon');
 $soon = ( isset($comingSoon[0]) ) ? $comingSoon[0] : '';
 if($soon !== 'soon') :
 ?>
-<header class="entry-title">
-  <h1><?php the_title(); ?></h1>
-</header>
+
 <?php get_template_part('parts/hero-subpage'); ?>
 <div id="primary" class="content-area default-template">
 	<main id="main" class="site-main">
 		<?php while ( have_posts() ) : the_post(); ?>
-      <?php if ( get_the_content() ) { ?>
+      <?php //if ( get_the_content() ) { ?>
       
       <section class="entry-content page-content">
+      	<header class="entry-title">
+		  <h1><?php the_title(); ?></h1>
+		</header>
         <div class="wrapper"><?php the_content(); ?></div>
       </section>
 
-  	<?php } ?>
+  	<?php //} ?>
 
 		<section class="faqs">
 		<?php /*

@@ -283,17 +283,17 @@ body.home {
       width: 100%;
       height: auto;
       float: left;
-      // &.mobile {
-      //   @media only screen and (min-width: $tabwidth) {
-      //     display: none;
-      //   }
-      // }
-      // &.desktop {
-      //   display: none;
-      //   @media only screen and (min-width: $tabwidth) {
-      //     display: block;
-      //   }
-      // }
+      &.mobile {
+        @media only screen and (min-width: $tabwidth) {
+          display: none;
+        }
+      }
+      &.desktop {
+        display: none;
+        @media only screen and (min-width: $tabwidth) {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -681,7 +681,7 @@ body.home {
 }
 
 
-body.subpage {
+// body.subpage {
   .site-header {
     .wrapper.wide {
       max-width: 100%;
@@ -741,7 +741,7 @@ body.subpage {
   #primary {
     min-height: 30em;
   }
-}
+// }
 
 .banner-subpage {
   width: 100%;
@@ -861,16 +861,19 @@ body.page-id-62 {
   position: relative;
   font-family: $tuckfest_hand;
   color: $color_link;
+  @media only screen and (min-width: $tabwidth) {
 
-  &:before {
-    left: 0;
   }
-  &:after {
-    right: 0;
-  }
+
+  // &:before {
+  //   left: 0;
+  // }
+  // &:after {
+  //   right: 0;
+  // }
   h1 {
     font-family: $tuckfest_hand;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     font-weight: normal;
     line-height: 1.2;
     text-transform: uppercase;
@@ -881,6 +884,9 @@ body.page-id-62 {
     width: auto;
     position: relative;
     z-index: 10;
+    @media only screen and (min-width: $tabwidth) {
+      font-size: 2.5rem;
+    }
   }
 }
 body {
@@ -1547,9 +1553,9 @@ body {
     .title-orange {
       margin-bottom: 20px;
     }
-    .coming-soon {
-      font-size: 16px;
-    }
+    // .coming-soon {
+    //   font-size: 16px;
+    // }
     .catname {
       font-size: 15px;
       font-weight: 600;
@@ -2277,7 +2283,7 @@ section.schedule-music {
       font-size: 13px;
       font-weight: 500;
       text-transform: uppercase;
-      color: #000;
+      color: #fff;
       padding: 11px 0 13px;
       position: relative;
       &:after {
@@ -2358,7 +2364,7 @@ section.faqs {
   line-height: 1.3;
   padding: 20px;
   display:none;
-  background-color: $color_link;
+  background-color: #fff;
   color: #000;
   a {
     color: #000;
@@ -2654,14 +2660,18 @@ section.coursemap {
    
 }  
 .polaroid {
-  width: 600px;
-  height: 653px;
+  width: 300px;
+  height: 327px;
   // height: auto;
   position: relative;
   transform-origin: 50% 50%;
   transform-style: preserve-3D;
   margin: 0 auto;
   transition: all ease .2s;
+  @media only screen and (min-width: $tabwidth) {
+    width: 600px;
+    height: 653px;
+  }
   &.home-pol {
     height: auto;
     &:nth-child(even) {
@@ -2678,6 +2688,10 @@ section.coursemap {
     }
     .behind-polaroid {
       transform: scale(.8);
+      top: -20px;
+      @media only screen and (min-width: $tabwidth) {
+        transform: scale(.8);
+      }
     }
   }
   a {
@@ -2706,22 +2720,26 @@ section.coursemap {
       left: 0;
       text-align: center;
       color: #000;
+      font-family: TuckfestHand;
     }
     .tape {
       position: absolute;
-      top: -37px;
-      right: 210px;
+      top: -17px;
+      right: 113px;
       background-size: cover;
-      width: 150px;
-      &:nth-child(even) {
-        
-        height: 65px;
-        background-image: url('images/tape-1.png');
-
+      width: 70px;
+      @media only screen and (min-width: $tabwidth) {
+        width: 150px;
+        top: -37px;
+        right: 210px;
       }
-      &:nth-child(odd) {
-        height: 65px;
+      &:nth-child(even), &:nth-child(odd) {
+        
+        height: 30px;
         background-image: url('images/tape-1.png');
+        @media only screen and (min-width: $tabwidth) {
+          height: 65px;
+        }
       }
       
     }
@@ -2735,9 +2753,110 @@ section.coursemap {
   z-index: 1;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -0px;
   max-height: 600px;
   img {
     width: 100%;
+  }
+}
+section.competitions, section.registration-boxes {
+  width: 100%;
+  clear: both;
+  h2 {
+    width: 100%;
+    margin: 80px 0;
+    text-align: center;
+    color: $color_link;
+    font-family: TuckfestHand;
+  }
+}
+section.registration-boxes {
+  
+  .reg-wrap {
+    
+    margin: 0 auto;
+    
+    @media only screen and (min-width: $tabwidth) {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+    .reg-box {
+      background-color: #fff;
+      color: #000;
+      width: 100%;
+      @media only screen and (min-width: $tabwidth) {
+        flex-basis: 48%;
+        width: 48%;
+      }
+      h3 {
+        width: 100%;
+        display: block;
+        background-color: $color_link;
+        color: #000;
+        font-family: TuckfestHand;
+        padding: 20px 10px;
+        text-align: center;
+        border-bottom: 5px solid #000;
+      }
+      .content {
+        padding: 20px;
+      }
+    }
+  }
+}
+#mc_embed_shell {
+  width: 100%;
+  margin: 60px auto 60px auto;
+  text-align: center;
+  h2 {
+    color: $color_link;
+    font-family: TuckfestHand;
+
+  }
+  input#mc-embedded-subscribe {
+    background-color: $color_link;
+    color: #000;
+    padding: 11px 25px;
+    border-radius: 0;
+    border: 0;
+    display: inline-block;
+    width: auto;
+    color: #000;
+  }
+  input#mce-EMAIL {
+    padding: 10px 25px;
+    display: inline-block;
+    width: auto;
+    color: #000;
+  }
+}
+.coming-soon {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #000;
+  @media only screen and (min-width: $tabwidth) {
+
+  }
+  .cs-text {
+    padding: 40px 20px;
+    background-color: $color_link;
+    @media only screen and (min-width: $tabwidth) {
+      padding: 40px;
+    }
+  }
+  h2 {
+    font-family: TuckfestHand;
+    font-size: 24px;
+    @media only screen and (min-width: $tabwidth) {
+      font-size: 40px;
+    }
   }
 }

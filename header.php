@@ -55,7 +55,7 @@ src="https://www.facebook.com/tr?id=236370623380911&ev=PageView&noscript=1"
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
-    
+
 <?php wp_head(); ?>
 </head>
 <?php 
@@ -78,13 +78,13 @@ $brandStyle = ($brand_image) ? ' style="background-image:url('.$brand_image['url
       <div class="burger"><span></span></div>
       <div class="flexwrap">
 
-        <?php if ( !is_front_page() && !is_home() ) { ?>
+        <?php //if ( !is_front_page() && !is_home() ) { ?>
           <div class="logo">
             <a href="<?php echo get_site_url() ?>" class="site-logo">
               <img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="TuckFest">
             </a> 
           </div>
-        <?php } ?>
+        <?php //} ?>
   			
         <a class="mobile-menu" id="menutoggle" href="javascript:void(0)"><span class="bar"></span><i>Menu</i></a>
 
