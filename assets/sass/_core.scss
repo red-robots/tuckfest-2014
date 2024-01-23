@@ -102,7 +102,7 @@ a {
 }
 body.home {
   .site {
-    padding-top: 50px;
+    // padding-top: 50px;
     @media only screen and (min-width: $tabwidth) {
       padding-top: 0;
     }
@@ -704,10 +704,11 @@ body.home {
     }
   }
   .logo {
-    width: 500px;
+    width: 250px;
     padding-left: 1vw;
     @media only screen and (min-width: $tabwidth) {
       padding-left: 5vw;
+      width: 290px;
     }
     img {
       width: 100%;
@@ -724,11 +725,12 @@ body.home {
     background-position: top left;
     background-repeat: no-repeat;
     // width: 275px;
-    width: 290px;
+    width: 250px;
     height: 33px;
     text-decoration: none;
     @media only screen and (min-width: $tabwidth) {
       height: 60px;
+      width: 290px;
     }
     span {
       display: inline-block;

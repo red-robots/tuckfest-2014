@@ -1423,7 +1423,6 @@ a:hover{color:#ff3}
 .sr{clip:rect(1px,1px,1px,1px);position:absolute !important;height:1px;width:1px;overflow:hidden}
 .sr:focus{background-color:#333;border-radius:3px;-webkit-box-shadow:0 0 2px 2px rgba(0,0,0,0.6);box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto !important;color:#FFF;display:block;font-size:14px;font-size:.875rem;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
 .flexwrap{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-body.home .site{padding-top:50px}
 .site{position:relative;overflow-x:hidden;overflow-y:auto;min-height:30em}
 .wrapper{max-width:1100px;width:100%;margin:0 auto;padding-left:20px;padding-right:20px;clear:both}
 .mobilemenu ul{margin:0;padding:0 0 80px 0;list-style:none}
@@ -1488,9 +1487,9 @@ body.home .site{padding-top:50px}
 .site-header #site-navigation{display:inline-block;width:auto;padding-right:5vw}
 .site-header #site-navigation #navigation{padding:0}
 .site-header #site-navigation #navigation ul.menu>li>a{padding:25px 20px 18px}
-.logo{width:500px;padding-left:1vw}
+.logo{width:250px;padding-left:1vw}
 .logo img{width:100%}
-.site-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-size:cover;background-position:top left;background-repeat:no-repeat;width:290px;height:33px;text-decoration:none}
+.site-logo{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-size:cover;background-position:top left;background-repeat:no-repeat;width:250px;height:33px;text-decoration:none}
 .site-logo span{display:inline-block;font-family:"BrandonMedItalic",sans-serif;font-size:2.1rem;font-weight:normal;line-height:1.1;letter-spacing:3px;text-transform:uppercase;padding-right:35px}
 #primary{min-height:30em}
 .banner-subpage{width:100%;float:left;position:relative;text-align:center}
@@ -1802,8 +1801,8 @@ section.photo-gallery .gal-thumb{width:33.333%}
 #site-navigation #navigation{display:block}
 .home-banner figure img.mobile{display:none}
 .home-banner figure img.desktop{display:block}
-.logo{padding-left:5vw}
-.site-logo{height:60px}
+.logo{padding-left:5vw;width:290px}
+.site-logo{height:60px;width:290px}
 .banner-subpage .banner-image.mobile{display:none}
 .banner-subpage .banner-image.desktop{display:block}
 .entry-title h1{font-size:2.5rem}
