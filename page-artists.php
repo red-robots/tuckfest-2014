@@ -27,6 +27,7 @@ if($soon !== 'soon') :
         		<?php the_content(); ?>
         		<?php echo do_shortcode('[feeds post="music"  perpage="-1"  filter="music_day"]'); ?>
         	</div>
+          <?php include( locate_template('parts/mc-signup.php') ); ?>
         </div>
       </section>
       <?php } ?>

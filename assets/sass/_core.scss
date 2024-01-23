@@ -2727,13 +2727,15 @@ section.coursemap {
     .pol-info {
       position: absolute;
       width: 100%;
-      bottom: 15px;
+      bottom: 20px;
       left: 0;
       text-align: center;
       color: #000;
       font-family: TuckfestHand;
+      font-size: 14px;
       @media only screen and (min-width: $tabwidth) {
         bottom: 40px;
+        font-size: 26px;
       }
     }
     .tape {

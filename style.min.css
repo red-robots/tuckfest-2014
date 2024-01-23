@@ -1759,7 +1759,7 @@ section.coursemap{width:100%;margin:0 0 20px 0;padding-top:20px;float:left}
 .polaroid:nth-child(odd){-webkit-transform:rotate(-9deg);transform:rotate(-9deg)}
 .polaroid .p-pic{position:relative;width:100%;height:100%;z-index:2}
 .polaroid .p-pic img{width:100%}
-.polaroid .p-pic .pol-info{position:absolute;width:100%;bottom:15px;left:0;text-align:center;color:#000;font-family:TuckfestHand}
+.polaroid .p-pic .pol-info{position:absolute;width:100%;bottom:20px;left:0;text-align:center;color:#000;font-family:TuckfestHand;font-size:14px}
 .polaroid .p-pic .tape{position:absolute;top:-17px;right:113px;background-size:cover;width:70px}
 .polaroid .p-pic .tape:nth-child(even),.polaroid .p-pic .tape:nth-child(odd){height:30px;background-image:url("images/tape-1.png")}
 .behind-polaroid{width:100%;overflow:hidden;z-index:1;position:absolute;left:0;top:-0;max-height:600px}
@@ -1817,7 +1817,7 @@ section.photo-gallery .gal-thumb{width:33.333%}
 div.vendors .ven{width:22%;-ms-flex-preferred-size:22%;flex-basis:22%;margin:10px 10px 20px 10px}
 .polaroid{width:600px;height:653px}
 .polaroid.home-pol .behind-polaroid{-webkit-transform:scale(0.8);transform:scale(0.8)}
-.polaroid .p-pic .pol-info{bottom:40px}
+.polaroid .p-pic .pol-info{bottom:40px;font-size:26px}
 .polaroid .p-pic .tape{width:150px;top:-37px;right:210px}
 .polaroid .p-pic .tape:nth-child(even),.polaroid .p-pic .tape:nth-child(odd){height:65px}
 section.registration-boxes .reg-wrap{width:60%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
