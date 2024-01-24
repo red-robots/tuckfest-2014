@@ -140,7 +140,7 @@ if($soon !== 'soon') :
 
     <?php while( have_posts() ): the_post(); ?>
 	    <section class="competitions" id="all-comps">
-	    	<h2>Comeptitions</h2>
+	    	<h2>Competitions</h2>
 	    	<div class="wrapper">
 	    		<?php echo do_shortcode('[feeds post="competition" perpage="-1" filter="competition_type,competition_day"]'); ?>
 	    	</div>
