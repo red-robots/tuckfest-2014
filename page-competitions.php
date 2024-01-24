@@ -81,6 +81,21 @@ if($soon !== 'soon') :
 
     <?php endwhile; ?>  
 
+
+    <?php 
+      $cit_title = get_field('cit_title');
+      $cit_copy = get_field('cit_copy');
+      if( $cit_title || $cit_copy ) { ?>
+        <div class="wrapper">
+        <div class="entry-content page-content">
+          <h2><?php echo $cit_title; ?></h2>
+          <?php echo $cit_copy; ?>
+        </div>
+        </div>
+     <?php  }
+     ?>
+
+
     <?php 
     	$reg_section_title = get_field('reg_section_title'); 
     	$registration_box = get_field('registration_box'); 

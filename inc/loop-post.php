@@ -53,7 +53,7 @@ if( ($title || $text) ||  $image ) { ?>
 
   <?php if ( $image ) { ?>
   <div class="imagecol block">
-    <div class="imagediv" style="background-image:url('<?php echo $image ?>')">
+    <div class="imagediv" >
       <img src="<?php echo $image ?>" >
     </div>
   </div> 
