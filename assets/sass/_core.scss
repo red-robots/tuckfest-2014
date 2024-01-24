@@ -198,7 +198,7 @@ body.home {
   float: left;
   #navigation {
     display: none;
-    @media only screen and (min-width: $tabwidth) {
+    @media only screen and (min-width: $deskwidth) {
       display: block;
     }
     text-align: center;
@@ -1227,7 +1227,11 @@ body {
     // border: 1px solid $orange;
   }
 }
-
+body.page-template-page-athletes {
+  .content-block {
+    align-items: center;
+  }
+}
 /* REPEATABLE BLOCKS */
 .repeatable-content-blocks {
   margin-top: 50px;
@@ -2590,11 +2594,20 @@ div.vendors {
 .nowrap {
     white-space: nowrap;
 }
+.gform_wrapper {
+  input {
+    color: #000;
+  }
+  input.button {
+    
+  }
+}
 .gform_page_footer {
   input.button {
     padding: 10px 25px;
-    background-color: $secondary;
-    color: #fff;
+    background-color: $color_link;
+    color: #000;
+    border: 0;
   }
   input.gform_button.button {
     padding: 5px 25px;

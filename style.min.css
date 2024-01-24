@@ -1545,6 +1545,7 @@ a:hover{color:#ff3}
 #pagination{width:100%;float:left;text-align:center;margin-top:15px;margin-bottom:40px;position:relative;left:-4px}
 #pagination span,#pagination a{display:inline-block;text-decoration:none;float:left;font-size:15px;line-height:1;padding:4px 7px;margin:5px 4px}
 #pagination span{color:#FFF}
+body.page-template-page-athletes .content-block{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .repeatable-content-blocks{margin-top:50px;margin-bottom:80px;width:100%;float:left}
 .repeatable-content-blocks h3.notfound{font-size:1.2rem;font-weight:normal;margin:0;color:#407078}
 .repeatable-content-blocks .wrapper{max-width:1300px;width:100%}
@@ -1734,7 +1735,8 @@ div.vendors .ven img{width:100%;-webkit-transform:scale(1);transform:scale(1);-w
 div.vendors .ven img:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .imagecol.xtra img{width:100%;height:auto}
 .nowrap{white-space:nowrap}
-.gform_page_footer input.button{padding:10px 25px;background-color:#000;color:#fff}
+.gform_wrapper input{color:#000}
+.gform_page_footer input.button{padding:10px 25px;background-color:#ff0;color:#000;border:0}
 .gform_page_footer input.gform_button.button{padding:5px 25px}
 .footer-sponsors{width:100%;padding:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:10px}
 .footer-sponsors li{list-style-type:none;max-width:150px}
@@ -1798,7 +1800,6 @@ section.registration-boxes .reg-wrap .reg-box .content{padding:20px}
 section.photo-gallery .gal-thumb{width:33.333%}
 .flexcol-content .flexcol{padding:0}
 }@media only screen and (min-width:820px){body.home .site{padding-top:0}
-#site-navigation #navigation{display:block}
 .home-banner figure img.mobile{display:none}
 .home-banner figure img.desktop{display:block}
 .logo{padding-left:5vw;width:290px}
@@ -1854,6 +1855,7 @@ section.photo-gallery .gal-thumb{width:20%}
 }@media screen and (min-width:1200px){.burger{display:none}
 nav.mobilemenu{display:none}
 section.faqs{max-width:700px;margin:0 auto;padding:40px 0}
+}@media only screen and (min-width:1200px){#site-navigation #navigation{display:block}
 }@media(min-width:1200px){.home-buttons a{font-size:26px}
 .home-buttons .button a .button-text{bottom:3vw}
 }@media screen and (max-width:820px){.js-day.noList{display:none}

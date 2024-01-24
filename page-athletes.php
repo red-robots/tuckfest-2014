@@ -74,7 +74,7 @@ if($soon !== 'soon') :
 
             <?php if ( $imgCheck == 'yes' ) { ?>
 	            <div class="imagecol block">
-	              <div class="imagediv" style="background-image:url('<?php echo $image['url'] ?>')">
+	              <div class="imagediv" >
 	                <img src="<?php echo $image['url'] ?>" alt=" <?php echo $image['title'] ?>">
 	              </div>
 	            </div> 
