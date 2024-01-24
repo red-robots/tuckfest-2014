@@ -13,6 +13,20 @@ if($soon !== 'soon') :
 <?php get_template_part('parts/hero-subpage'); ?>
 <div id="primary" class="content-area default-template">
 
+  <section class="anchors">
+    <ul>
+      <li>
+        <a href="#pro-comps">Pro Comps</a>
+      </li>
+      <li>
+        <a href="#citizen-comps">Citizen Comps</a>
+      </li>
+      <li>
+        <a href="#all-comps">All Comps</a>
+      </li>
+    </ul>
+  </section>
+
   <main id="main" class="site-main">
     <?php while ( have_posts() ) : the_post(); ?>
       <?php //if ( get_the_content() ) { ?>
@@ -25,7 +39,7 @@ if($soon !== 'soon') :
       <?php //} ?>
 
       <?php if( have_rows('repeatable_block') ) { ?>
-      <div class="repeatable-content-blocks">
+      <div class="repeatable-content-blocks" id="pro-comps">
         <div class="wrapper">
         <?php $n=1; while ( have_rows('repeatable_block') ) : the_row(); 
           $title = get_sub_field('title');
@@ -81,7 +95,7 @@ if($soon !== 'soon') :
 
     <?php endwhile; ?>  
 
-
+    <div id="citizen-comps">&nbsp;</div>
     <?php 
       $cit_title = get_field('cit_title');
       $cit_copy = get_field('cit_copy');
@@ -125,7 +139,7 @@ if($soon !== 'soon') :
 	<?php } ?>
 
     <?php while( have_posts() ): the_post(); ?>
-	    <section class="competitions">
+	    <section class="competitions" id="all-comps">
 	    	<h2>Comeptitions</h2>
 	    	<div class="wrapper">
 	    		<?php echo do_shortcode('[feeds post="competition" perpage="-1" filter="competition_type,competition_day"]'); ?>
