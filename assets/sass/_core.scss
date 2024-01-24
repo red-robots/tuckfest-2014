@@ -828,6 +828,29 @@ body.home {
   font-family: $font_primary;
   font-weight: normal;
   word-spacing: .3em;
+  h2 {
+    font-family: $font_heading;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: italic;
+    span {
+      display: inline-block;
+      padding: 4px 0;
+      line-height: 1.1;
+      b {
+        font-weight: 500;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+      }
+      position: relative;
+    }
+  }
   &.page-content {
     max-width: 800px;
     padding-top: 40px;
@@ -884,7 +907,7 @@ body.page-id-62 {
     line-height: 1.2;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0 0;
+    margin: 0 0 30px 0;
     padding: 14px 5vw 12px;
     display: inline-block;
     width: auto;
@@ -1346,7 +1369,7 @@ body.page-template-page-athletes {
       letter-spacing: 2px;
       span {
         display: inline-block;
-        padding: 4px 10px;
+        padding: 4px 0;
         line-height: 1.1;
         b {
           font-weight: 500;
@@ -1912,6 +1935,8 @@ span.gray, span.red, span.orange {
       display: inline-block;
       img {
         width: 100%;
+        -webkit-filter: invert(1);
+        filter: invert(1);
       }
     }
     .mis {
@@ -1990,6 +2015,7 @@ section.schedule-music {
     .time {
       color:#fff;
       font-size: 18px;
+      font-family: $font_primary;
     }
     .first {
       // margin: 0 0 20px 0;
@@ -2000,6 +2026,9 @@ section.schedule-music {
       font-weight: normal;
       line-height: 1.1;
       color: #fff;
+      font-family: $font_heading;
+      font-style: italic;
+      text-transform: uppercase;
       a {
         text-decoration: none;
 
@@ -2027,12 +2056,16 @@ section.schedule-music {
       //     color: $darkgreen;
       //   }
       // }
-      // &.music a {
-      //   background-color: $orange;
-      //   .time {
-      //     
-      //   }
-      // }
+      &.music a, &.deep-water-solo a {
+        background-color: $color_link;
+        .title {
+          color: #000;
+          font-family: $tuckfest_hand;
+        }
+        .time {
+          color: #000;
+        }
+      }
       // &.bike a, &.trail-run a, &.raft a, &.adventure-obstacle a, &.deep-water-solo a, &.swim a, &.kayak a, &.sup a, &.climb a {
       //   background-color: #EB8B01;
       // }
@@ -2599,7 +2632,7 @@ div.vendors {
     color: #000;
   }
   input.button {
-    
+
   }
 }
 .gform_page_footer {
@@ -2750,7 +2783,7 @@ section.coursemap {
       font-size: 14px;
       @media only screen and (min-width: $tabwidth) {
         bottom: 40px;
-        font-size: 26px;
+        font-size: 32px;
       }
     }
     .tape {
@@ -2867,7 +2900,7 @@ section.registration-boxes {
 }
 .coming-soon {
   width: 100%;
-  height: 100vh;
+  padding: 50px 0;
   text-align: center;
   display: flex;
   justify-content: center;

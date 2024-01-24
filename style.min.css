@@ -1092,7 +1092,7 @@ button:focus{outline:0}
 .fa-youtube-square:before{content:"\f431"}
 .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
-@font-face{font-family:'TuckfestHand';src:url("assets/webfonts/TuckfestHand-Regular.woff") format("woff")}
+@font-face{font-family:'TuckfestHand';src:url("assets/webfonts/Handwritingext.woff") format("woff")}
 @font-face{font-family:'BrandonReg';src:url("assets/webfonts/Brandon_Grotesque_regular.otf") format("otf");font-weight:normal;font-style:normal}
 @font-face{font-family:'BrandonRegItalic';src:url("assets/webfonts/Brandon_Grotesque_regular_italic.otf") format("otf");font-weight:normal;font-style:italic}
 @font-face{font-family:'BrandonMed';src:url("assets/webfonts/Brandon_Grotesque_medium.otf") format("otf");font-weight:normal;font-style:normal}
@@ -1502,10 +1502,13 @@ a:hover{color:#ff3}
 .banner-subpage .heroBtn:hover{background-color:#000}
 .banner-subpage.noimage .banner-button{position:relative;top:-5px}
 .entry-content{font-family:"BrandonReg",sans-serif;font-weight:normal;word-spacing:.3em}
+.entry-content h2{font-family:"BrandonMedItalic",sans-serif;font-size:30px;font-weight:500;line-height:1.2;margin:0 0 20px;color:#fff;text-transform:uppercase;letter-spacing:2px;font-style:italic}
+.entry-content h2 span{display:inline-block;padding:4px 0;line-height:1.1;position:relative}
+.entry-content h2 span b{font-weight:500;display:inline-block;position:relative;z-index:10}
 .entry-content.page-content{max-width:800px;padding-top:40px;margin:0 auto;padding:20px;clear:both}
 .spotify-wrap{width:100%;margin:40px 0 0 0;float:left}
 .entry-title{background:#000;position:relative;text-align:center;position:relative;font-family:"TuckfestHand",sans-serif;color:#ff0}
-.entry-title h1{font-family:"TuckfestHand",sans-serif;font-size:1.7rem;font-weight:normal;line-height:1.2;text-transform:uppercase;letter-spacing:2px;margin:0;padding:14px 5vw 12px;display:inline-block;width:auto;position:relative;z-index:10}
+.entry-title h1{font-family:"TuckfestHand",sans-serif;font-size:1.7rem;font-weight:normal;line-height:1.2;text-transform:uppercase;letter-spacing:2px;margin:0 0 30px 0;padding:14px 5vw 12px;display:inline-block;width:auto;position:relative;z-index:10}
 .default-template{width:100%;float:left}
 .feeds-wrapper{padding:50px 0}
 .feeds-wrapper .columns{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
@@ -1565,7 +1568,7 @@ body.page-template-page-athletes .content-block{-webkit-box-align:center;-ms-fle
 .repeatable-content-blocks .content-block .btn2:hover{background:#fff}
 .repeatable-content-blocks .content-block .btn2.btn-green{background:#fff}
 .repeatable-content-blocks .content-block .rb_title{font-family:"BrandonMedItalic",sans-serif;font-size:30px;font-weight:500;line-height:1.2;margin:0 0 20px;color:#fff;text-transform:uppercase;letter-spacing:2px}
-.repeatable-content-blocks .content-block .rb_title span{display:inline-block;padding:4px 10px;line-height:1.1;position:relative}
+.repeatable-content-blocks .content-block .rb_title span{display:inline-block;padding:4px 0;line-height:1.1;position:relative}
 .repeatable-content-blocks .content-block .rb_title span b{font-weight:500;display:inline-block;position:relative;z-index:10}
 .repeatable-content-blocks .content-block .rb_content{font-family:"BrandonReg",sans-serif;font-weight:normal}
 .repeatable-content-blocks .content-block .rb_content ul{margin:0 0 10px 20px}
@@ -1646,7 +1649,7 @@ span.gray,span.red,span.orange{width:100%}
 .schedule .col{-ms-flex-preferred-size:100%;flex-basis:100%;text-align:left}
 .schedule .col h2{width:100%;text-align:center;margin:0 0 20px 0;font-size:20px;font-weight:normal;color:#000;text-transform:uppercase}
 .schedule .col .musicnote{width:30px;display:inline-block}
-.schedule .col .musicnote img{width:100%}
+.schedule .col .musicnote img{width:100%;-webkit-filter:invert(1);filter:invert(1)}
 .schedule .col .mis{width:auto;display:inline-block;margin-left:10px}
 .schedule .col .title{width:auto;display:inline-block;padding:0}
 section.schedule-music{-ms-flex-wrap:wrap;flex-wrap:wrap}
@@ -1659,11 +1662,14 @@ section.schedule-music .col{-ms-flex-preferred-size:22%;flex-basis:22%}
 .schedule .col-wrap .image img,section.schedule-music .col-wrap .image img{width:100%}
 .schedule .col-wrap .icon,section.schedule-music .col-wrap .icon{width:50px;height:50px;position:absolute;bottom:-25px;left:0;right:0;margin:0 auto;z-index:100000}
 .schedule .col-wrap h2,section.schedule-music .col-wrap h2{text-transform:uppercase;font-family:"BrandonMedItalic",sans-serif;margin:30px auto 20px auto;width:100%;float:left;color:#000}
-.schedule .col-wrap .time,section.schedule-music .col-wrap .time{color:#fff;font-size:18px}
-.schedule .col-wrap .title,section.schedule-music .col-wrap .title{font-size:18px;font-weight:normal;line-height:1.1;color:#fff}
+.schedule .col-wrap .time,section.schedule-music .col-wrap .time{color:#fff;font-size:18px;font-family:"BrandonReg",sans-serif}
+.schedule .col-wrap .title,section.schedule-music .col-wrap .title{font-size:18px;font-weight:normal;line-height:1.1;color:#fff;font-family:"BrandonMedItalic",sans-serif;font-style:italic;text-transform:uppercase}
 .schedule .col-wrap .title a,section.schedule-music .col-wrap .title a{text-decoration:none;-webkit-transition:all ease .2s;transition:all ease .2s}
 .schedule .col-wrap li,section.schedule-music .col-wrap li{list-style:none;margin:0}
 .schedule .col-wrap li.item,section.schedule-music .col-wrap li.item{width:100%;position:relative;float:left;color:#fff}
+.schedule .col-wrap li.music a,.schedule .col-wrap li.deep-water-solo a,section.schedule-music .col-wrap li.music a,section.schedule-music .col-wrap li.deep-water-solo a{background-color:#ff0}
+.schedule .col-wrap li.music a .title,.schedule .col-wrap li.deep-water-solo a .title,section.schedule-music .col-wrap li.music a .title,section.schedule-music .col-wrap li.deep-water-solo a .title{color:#000;font-family:"TuckfestHand",sans-serif}
+.schedule .col-wrap li.music a .time,.schedule .col-wrap li.deep-water-solo a .time,section.schedule-music .col-wrap li.music a .time,section.schedule-music .col-wrap li.deep-water-solo a .time{color:#000}
 .schedule ul,section.schedule-music ul{margin:0;padding:0}
 .schedule ul li,section.schedule-music ul li{margin:0;padding:0}
 .schedule ul a,section.schedule-music ul a{color:#fff;background-color:#000;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none;padding:15px;-webkit-box-shadow:0 0 15px 10px rgba(0,0,0,0) inset;box-shadow:0 0 15px 10px rgba(0,0,0,0) inset}
@@ -1775,7 +1781,7 @@ section.registration-boxes .reg-wrap .reg-box .content{padding:20px}
 #mc_embed_shell h2{color:#ff0;font-family:TuckfestHand}
 #mc_embed_shell input#mc-embedded-subscribe{background-color:#ff0;color:#000;padding:11px 25px;border-radius:0;border:0;display:inline-block;width:auto;color:#000}
 #mc_embed_shell input#mce-EMAIL{padding:10px 25px;display:inline-block;width:auto;color:#000}
-.coming-soon{width:100%;height:100vh;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:#000}
+.coming-soon{width:100%;padding:50px 0;text-align:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:#000}
 .coming-soon .cs-text{padding:40px 20px;background-color:#ff0}
 .coming-soon h2{font-family:TuckfestHand;font-size:24px}
 @media screen and (min-width:600px){#cboxTitle{position:absolute;top:0;left:0;text-align:left;width:20%;font-weight:bold;color:#fff;padding:8% 2% 8% 2%;line-height:1.3;font-size:20px}
@@ -1817,7 +1823,7 @@ section.photo-gallery .gal-thumb{width:33.333%}
 div.vendors .ven{width:22%;-ms-flex-preferred-size:22%;flex-basis:22%;margin:10px 10px 20px 10px}
 .polaroid{width:600px;height:653px}
 .polaroid.home-pol .behind-polaroid{-webkit-transform:scale(0.8);transform:scale(0.8)}
-.polaroid .p-pic .pol-info{bottom:40px;font-size:26px}
+.polaroid .p-pic .pol-info{bottom:40px;font-size:32px}
 .polaroid .p-pic .tape{width:150px;top:-37px;right:210px}
 .polaroid .p-pic .tape:nth-child(even),.polaroid .p-pic .tape:nth-child(odd){height:65px}
 section.registration-boxes .reg-wrap{width:60%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
