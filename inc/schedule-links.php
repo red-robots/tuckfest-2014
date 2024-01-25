@@ -214,7 +214,7 @@ if( $i == 1 ) {
 				Whitewater Center Activities
 			</div>
 			<div class="time">
-				<strong><?php echo $actTime; ?></strong>
+				<?php echo $actTime; ?>
 			</div>
 		</a>
 	</li>

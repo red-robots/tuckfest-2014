@@ -2972,3 +2972,7 @@ section.anchors {
   font-family: Axis !important;
   font-style: normal !important;
 }
+img.invert {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
