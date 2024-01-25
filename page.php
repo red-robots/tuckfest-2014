@@ -12,9 +12,10 @@
  * @package bellaworks
  */
 get_header(); 
+get_template_part('parts/hero-subpage');
 get_template_part('inc/coming-soon');
 $comingSoon = get_field('coming_soon');
-get_template_part('parts/hero-subpage');
+
 $soon = ( isset($comingSoon[0]) ) ? $comingSoon[0] : '';
 if($soon !== 'soon') :
 ?>
