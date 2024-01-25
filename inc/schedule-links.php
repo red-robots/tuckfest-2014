@@ -220,7 +220,12 @@ if( $i == 1 ) {
 	</li>
 <?php } ?>
 
-<li class="item <?php echo $classes; ?> sched-act<?php echo $daySlug ?>">
+<?php 
+ $highlight = get_field('highlight_on_schedule');
+ if( $highlight == 'yes' ){ $hClass = 'highlight'; } else { $hClass = ''; }
+
+ ?>
+<li class="item <?php echo $classes; ?> sched-act<?php echo $daySlug; ?> <?php echo $hClass; ?>">
 	<a href="<?php echo $url; ?>">
 	<?php if( get_post_type() == 'music' ) { ?>
 		<div class="musicnote">
