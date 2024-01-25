@@ -15,6 +15,7 @@ if($soon !== 'soon') :
 
   <section class="anchors">
     <ul>
+      <li>//</li>
       <li>
         <a href="#pro-comps">Pro Comps</a>
       </li>
@@ -24,6 +25,7 @@ if($soon !== 'soon') :
       <li>
         <a href="#all-comps">All Comps</a>
       </li>
+      <li>//</li>
     </ul>
   </section>
 
@@ -44,6 +46,7 @@ if($soon !== 'soon') :
         <?php $n=1; while ( have_rows('repeatable_block') ) : the_row(); 
           $title = get_sub_field('title');
           $text = get_sub_field('text');
+          $date = get_sub_field('date');
           $buttons = get_sub_field('buttons');
           $gallery = get_sub_field('gallery');
           $column_class = ( ($title || $text) &&  $gallery ) ? 'half':'full';
@@ -56,8 +59,14 @@ if($soon !== 'soon') :
                  <h2 class="rb_title"><span><b><?php echo $title ?></b></span></h2> 
                 <?php } ?>
 
+                <?php if($date){ ?>
+                  <div class="rb_date">
+                    <?php echo $date; ?>
+                  </div>
+                <?php } ?>
+
                 <?php if ($text) { ?>
-                 <div class="rb_content"><?php echo anti_email_spam($text); ?></div> 
+                 <div class="rb_content"><?php echo $text; ?></div> 
                 <?php } ?>
 
                 <?php if ($buttons) { ?>

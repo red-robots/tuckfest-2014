@@ -1358,6 +1358,13 @@ body.page-template-page-athletes {
         background: #fff;
       }
     }
+    .rb_date {
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgba(#fff, .5);
+      width: auto;
+      display: inline-block;
+    }
     .rb_title {
       font-family: $font_heading;
       font-size: 30px;
@@ -2943,6 +2950,7 @@ section.anchors {
     padding: 0 20px;
     margin: 0;
     text-transform: uppercase;
+    color: $color_link;
   }
   a {
     text-decoration: none;
