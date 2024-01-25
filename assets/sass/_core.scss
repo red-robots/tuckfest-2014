@@ -1273,6 +1273,7 @@ body.page-template-page-athletes {
   }
   .content-block {
     margin: 8px 0 80px 0;
+    overflow: hidden;
     // @include flexgroup();
     
     // @include flexbox-justify(space-between);
