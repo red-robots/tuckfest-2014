@@ -1093,7 +1093,7 @@ button:focus{outline:0}
 .sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
 .sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
 @font-face{font-family:'TuckfestHand';src:url("assets/webfonts/Handwritingext.woff") format("woff")}
-@font-face{font-family:'Axis';src:url("assets/webfonts/AxisExtrabold.otf") format("otf");font-weight:normal;font-style:normal}
+@font-face{font-family:'Axis';src:url("assets/webfonts/AxisExtrabold.woff") format("woff");font-weight:normal;font-style:normal}
 @font-face{font-family:'BrandonReg';src:url("assets/webfonts/Brandon_Grotesque_regular.otf") format("otf");font-weight:normal;font-style:normal}
 @font-face{font-family:'BrandonRegItalic';src:url("assets/webfonts/Brandon_Grotesque_regular_italic.otf") format("otf");font-weight:normal;font-style:italic}
 @font-face{font-family:'BrandonMed';src:url("assets/webfonts/Brandon_Grotesque_medium.otf") format("otf");font-weight:normal;font-style:normal}
@@ -1510,6 +1510,7 @@ a:hover{color:#ff3}
 .spotify-wrap{width:100%;margin:40px 0 0 0;float:left}
 .entry-title{background:#000;position:relative;text-align:center;position:relative;font-family:"TuckfestHand",sans-serif;color:#ff0}
 .entry-title h1{font-family:"TuckfestHand",sans-serif;font-size:1.7rem;font-weight:normal;line-height:1.2;text-transform:uppercase;letter-spacing:2px;margin:0 0 30px 0;padding:14px 5vw 12px;display:inline-block;width:auto;position:relative;z-index:10}
+.entry-title h2{margin-bottom:30px}
 .default-template{width:100%;float:left}
 .feeds-wrapper{padding:50px 0}
 .feeds-wrapper .columns{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
@@ -1561,8 +1562,8 @@ body.page-template-page-athletes .content-block{-webkit-box-align:center;-ms-fle
 .repeatable-content-blocks .content-block .imagecol .imagediv{width:100%;height:300px;float:left;background-size:cover;background-position:center;background-repeat:no-repeat}
 .repeatable-content-blocks .content-block .imagecol img{width:100%;height:auto;float:left}
 .repeatable-content-blocks .content-block .rb_buttons{margin-top:25px}
-.repeatable-content-blocks .content-block .rb_buttons a{text-decoration:none;display:inline-block;background-color:#ff0;color:#000;padding:10px 25px}
-.repeatable-content-blocks .content-block .rb_buttons a:hover{color:#000;-webkit-transform:translateY(-10px);transform:translateY(-10px)}
+.repeatable-content-blocks .content-block .rb_buttons a{text-decoration:none;display:inline-block;background-color:#ff0;color:#000;padding:10px 25px;-webkit-transform:scale(1);transform:scale(1)}
+.repeatable-content-blocks .content-block .rb_buttons a:hover{color:#000;-webkit-transform:scale(1.1);transform:scale(1.1)}
 .repeatable-content-blocks .content-block .rb_buttons .btngroup{width:100%;float:left;margin:5px 0}
 .repeatable-content-blocks .content-block .rb_buttons .btngroup a{display:block;margin:0;text-transform:uppercase}
 .repeatable-content-blocks .content-block .btn2{padding:6px 12px;background:#fff;margin:10px 10px}
@@ -1627,7 +1628,7 @@ span.gray,span.red,span.orange{width:100%}
 .footer-sponsors span.sponsor-logo img{width:120px;height:auto;-webkit-filter:brightness(0) invert(1);filter:brightness(0) invert(1)}
 .footer-sponsors li img{-webkit-filter:brightness(0) invert(1);filter:brightness(0) invert(1)}
 .page404 .entry-title .small-title{position:relative;top:15px;font-size:18px}
-.page404 .innerText{margin:40px 0 50px;background:#407078;padding:20px;font-family:"BrandonReg",sans-serif;font-size:16px}
+.page404 .innerText{margin:40px 0 50px;padding:20px;font-family:"BrandonReg",sans-serif;font-size:16px}
 .page404 .innerText a{text-decoration:none}
 .bottom-dws-blurb{margin-bottom:40px;font-size:14px;line-height:1.3;text-align:left}
 .bottom-dws-blurb .wrapper{max-width:1300px}
@@ -1649,7 +1650,7 @@ span.gray,span.red,span.orange{width:100%}
 #grid:after{content:'';display:block;clear:both}
 .schedule{-ms-flex-wrap:wrap;flex-wrap:wrap;padding-bottom:40px;min-height:20em}
 .schedule .col{-ms-flex-preferred-size:100%;flex-basis:100%;text-align:left}
-.schedule .col h2{width:100%;text-align:center;margin:0 0 20px 0;font-size:20px;font-weight:normal;color:#000;text-transform:uppercase}
+.schedule .col h2{width:100%;text-align:center;margin:0 0 20px 0;font-size:20px;font-weight:normal;color:#ff0;text-transform:uppercase}
 .schedule .col .musicnote{width:30px;display:inline-block}
 .schedule .col .musicnote img{width:100%;-webkit-filter:invert(1);filter:invert(1)}
 .schedule .col .mis{width:auto;display:inline-block;margin-left:10px}
@@ -1665,10 +1666,10 @@ section.schedule-music .col{-ms-flex-preferred-size:22%;flex-basis:22%}
 .schedule .col-wrap .icon,section.schedule-music .col-wrap .icon{width:50px;height:50px;position:absolute;bottom:-25px;left:0;right:0;margin:0 auto;z-index:100000}
 .schedule .col-wrap h2,section.schedule-music .col-wrap h2{text-transform:uppercase;font-family:"BrandonMedItalic",sans-serif;margin:30px auto 20px auto;width:100%;float:left;color:#000}
 .schedule .col-wrap .time,section.schedule-music .col-wrap .time{color:#fff;font-size:18px;font-family:"BrandonReg",sans-serif}
-.schedule .col-wrap .title,section.schedule-music .col-wrap .title{font-size:18px;font-weight:normal;line-height:1.1;color:#fff;font-family:"BrandonMedItalic",sans-serif;font-style:italic;text-transform:uppercase}
+.schedule .col-wrap .title,section.schedule-music .col-wrap .title{font-size:18px;font-weight:normal;line-height:1.4;color:#fff;font-family:"BrandonMedItalic",sans-serif;font-style:italic;text-transform:uppercase}
 .schedule .col-wrap .title a,section.schedule-music .col-wrap .title a{text-decoration:none;-webkit-transition:all ease .2s;transition:all ease .2s}
 .schedule .col-wrap li,section.schedule-music .col-wrap li{list-style:none;margin:0}
-.schedule .col-wrap li.item,section.schedule-music .col-wrap li.item{width:100%;position:relative;float:left;color:#fff}
+.schedule .col-wrap li.item,section.schedule-music .col-wrap li.item{width:100%;position:relative;float:left;color:#fff;border-bottom:3px solid #000}
 .schedule .col-wrap li.music a,.schedule .col-wrap li.deep-water-solo a,section.schedule-music .col-wrap li.music a,section.schedule-music .col-wrap li.deep-water-solo a{background-color:#ff0}
 .schedule .col-wrap li.music a .title,.schedule .col-wrap li.deep-water-solo a .title,section.schedule-music .col-wrap li.music a .title,section.schedule-music .col-wrap li.deep-water-solo a .title{color:#000;font-family:"TuckfestHand",sans-serif}
 .schedule .col-wrap li.music a .time,.schedule .col-wrap li.deep-water-solo a .time,section.schedule-music .col-wrap li.music a .time,section.schedule-music .col-wrap li.deep-water-solo a .time{color:#000}
@@ -1744,6 +1745,7 @@ div.vendors .ven img:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .imagecol.xtra img{width:100%;height:auto}
 .nowrap{white-space:nowrap}
 .gform_wrapper input{color:#000}
+.gform_wrapper select{color:#000}
 .gform_page_footer input.button{padding:10px 25px;background-color:#ff0;color:#000;border:0}
 .gform_page_footer input.gform_button.button{padding:5px 25px}
 .footer-sponsors{width:100%;padding:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:10px}
@@ -1808,8 +1810,8 @@ section.anchors a{text-decoration:none}
 #primary.single-competition .event-info.pastresults .divisions .flexwrap .cat-info{width:33.33%}
 .page404 #sitemap>ul{-webkit-column-count:2;-moz-column-count:2;column-count:2}
 .site-footer .wrapper{padding:20px 20px 15px}
-.site-footer .flexwrap{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.site-footer #footlogo{margin-bottom:0}
+.site-footer .flexwrap{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.site-footer #footlogo{margin-bottom:0;margin-right:20px}
 #footer-navigation ul.menu>li{float:left}
 section.photo-gallery .gal-thumb{width:33.333%}
 .flexcol-content .flexcol{padding:0}

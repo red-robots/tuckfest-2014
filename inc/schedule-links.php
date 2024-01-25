@@ -216,7 +216,7 @@ if( $i == 1 ) {
 	<a href="<?php echo $url; ?>">
 	<?php if( get_post_type() == 'music' ) { ?>
 		<div class="musicnote">
-			<img src="<?php bloginfo('template_url'); ?>/images/MusicNote.png">
+			<img src="<?php bloginfo('template_url'); ?>/images/MusicNote-2.png">
 		</div>
 		<div class="mis">
 			<div class="title"><?php the_title(); ?></div>
