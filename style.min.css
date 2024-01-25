@@ -1562,7 +1562,7 @@ body.page-template-page-athletes .content-block{-webkit-box-align:center;-ms-fle
 .repeatable-content-blocks .content-block .imagecol .imagediv{width:100%;height:300px;float:left;background-size:cover;background-position:center;background-repeat:no-repeat}
 .repeatable-content-blocks .content-block .imagecol img{width:100%;height:auto;float:left}
 .repeatable-content-blocks .content-block .rb_buttons{margin-top:25px}
-.repeatable-content-blocks .content-block .rb_buttons a{text-decoration:none;display:inline-block;background-color:#ff0;color:#000;padding:10px 25px;-webkit-transform:scale(1);transform:scale(1)}
+.repeatable-content-blocks .content-block .rb_buttons a{text-decoration:none;display:inline-block;background-color:#ff0;color:#000;padding:10px 25px;-webkit-transform:scale(1);transform:scale(1);margin-bottom:10px}
 .repeatable-content-blocks .content-block .rb_buttons a:hover{color:#000;-webkit-transform:scale(1.1);transform:scale(1.1)}
 .repeatable-content-blocks .content-block .rb_buttons .btngroup{width:100%;float:left;margin:5px 0}
 .repeatable-content-blocks .content-block .rb_buttons .btngroup a{display:block;margin:0;text-transform:uppercase}
