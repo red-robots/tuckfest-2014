@@ -176,7 +176,7 @@ if( $i == 1 ) {
 	<li class="item<?php echo $daySlug ?>">
 		<a href="<?php echo $regLink; ?>">
 			<?php if( $pp ){ ?>
-				<div class="title first ">
+				<div class="title first axis">
 					<?php echo $pp; ?>
 				</div>
 			<?php } ?>
@@ -195,14 +195,14 @@ if( $i == 1 ) {
 	</li>
 	<li class="item">
 		<a href="" >
-			<div class="title first">
+			<div class="title first axis">
 				<?php echo $vv; ?>
 			</div>
 		</a>
 	</li>
 	<li class="item">
 		<a href="<?php echo $wwAct; ?>" target="_blank">
-			<div class="title first">
+			<div class="title first axis">
 				Whitewater Center Activities
 			</div>
 			<div class="time">
