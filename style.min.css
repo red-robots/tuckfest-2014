@@ -1650,7 +1650,7 @@ span.gray,span.red,span.orange{width:100%}
 #grid:after{content:'';display:block;clear:both}
 .schedule{-ms-flex-wrap:wrap;flex-wrap:wrap;padding-bottom:40px;min-height:20em}
 .schedule .col{-ms-flex-preferred-size:100%;flex-basis:100%;text-align:left}
-.schedule .col h2{width:100%;text-align:center;margin:0 0 20px 0;font-size:20px;font-weight:normal;color:#ff0;text-transform:uppercase}
+.schedule .col h2{width:100%;text-align:center;margin:0 0 20px 0;font-size:20px;font-weight:normal;color:#ff0;text-transform:uppercase;font-family:TuckfestHand}
 .schedule .col .musicnote{width:30px;display:inline-block}
 .schedule .col .musicnote img{width:100%;-webkit-filter:invert(1);filter:invert(1)}
 .schedule .col .mis{width:auto;display:inline-block;margin-left:10px}

@@ -82,6 +82,8 @@ if( $queried_object->slug == 'thursday' ) {
 }elseif( $queried_object->slug == 'friday' ) {
 	$pp = get_field('friday_schedule', 'option');
 	$vv = get_field('friday_schedule_vv', 'option');
+	$pp_time = get_field('friday_schedule_time', 'option');
+	$vv_time = get_field('friday_schedule_vv_time', 'option');
 	$startTime = $friTime;
 	$EndTime = $friEndTime;
 	$regStart = get_field('friday_start', 'option');
@@ -93,6 +95,8 @@ if( $queried_object->slug == 'thursday' ) {
 }elseif( $queried_object->slug == 'saturday' ) {
 	$pp = get_field('saturday_schedule', 'option');
 	$vv = get_field('saturday_schedule_vv', 'option');
+	$pp_time = get_field('saturday_schedule_time', 'option');
+	$vv_time = get_field('saturday_schedule_vv_time', 'option');
 	$startTime = $satTime;
 	$EndTime = $satEndTime;
 	$regStart = get_field('saturday_start', 'option');
@@ -104,6 +108,8 @@ if( $queried_object->slug == 'thursday' ) {
 }elseif( $queried_object->slug == 'sunday' ) {
 	$pp = get_field('sunday_schedule', 'option');
 	$vv = get_field('sunday_schedule_vv', 'option');
+	$pp_time = get_field('sunday_schedule_time', 'option');
+	$vv_time = get_field('sunday_schedule_vv_time', 'option');
 	$startTime = $sunTime;
 	$EndTime = $sunEndTime;
 	$regStart = get_field('sunday_start', 'option');
@@ -179,8 +185,9 @@ if( $i == 1 ) {
 				<div class="title first axis">
 					<?php echo $pp; ?>
 				</div>
+				<div class="time"><?php echo $pp_time; ?></div>
 			<?php } ?>
-			<div class="time">
+			<!-- <div class="time">
 				<?php 
 				if( $regStart && $regEnd ) {
 					echo $regStart.' - '.$regEnd;  
@@ -190,7 +197,7 @@ if( $i == 1 ) {
 				}
 
 				?>
-			</div>
+			</div> -->
 		</a>
 	</li>
 	<li class="item">
@@ -198,6 +205,7 @@ if( $i == 1 ) {
 			<div class="title first axis">
 				<?php echo $vv; ?>
 			</div>
+			<div class="time"><?php echo $vv_time; ?></div>
 		</a>
 	</li>
 	<li class="item">
@@ -206,7 +214,7 @@ if( $i == 1 ) {
 				Whitewater Center Activities
 			</div>
 			<div class="time">
-				<?php echo $actTime; ?>
+				<strong><?php echo $actTime; ?></strong>
 			</div>
 		</a>
 	</li>
