@@ -1746,6 +1746,7 @@ div.vendors .ven img:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}
 .nowrap{white-space:nowrap}
 .gform_wrapper input{color:#000}
 .gform_wrapper select{color:#000}
+.gform_wrapper textarea.textarea{color:#000}
 .gform_page_footer input.button{padding:10px 25px;background-color:#ff0;color:#000;border:0}
 .gform_page_footer input.gform_button.button{padding:5px 25px}
 .footer-sponsors{width:100%;padding:20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:10px}
