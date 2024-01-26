@@ -40,7 +40,7 @@ if($soon !== 'soon') :?>
       'facetwp' => true
     ));
 
-    $terms['demo_clinic_type'] = getPostTerms($posttype,'demo_clinic_type',array('name','ASC'));
+    //$terms['demo_clinic_type'] = getPostTerms($posttype,'demo_clinic_type',array('name','ASC'));
     $terms['event_day'] = getPostTerms($posttype,'event_day',null);
 
     // echo "<pre>";
