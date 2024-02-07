@@ -1670,6 +1670,7 @@ section.schedule-music .col{-ms-flex-preferred-size:22%;flex-basis:22%}
 .schedule .col-wrap .title a,section.schedule-music .col-wrap .title a{text-decoration:none;-webkit-transition:all ease .2s;transition:all ease .2s}
 .schedule .col-wrap li,section.schedule-music .col-wrap li{list-style:none;margin:0}
 .schedule .col-wrap li.item,section.schedule-music .col-wrap li.item{width:100%;position:relative;float:left;color:#fff;border-bottom:3px solid #000}
+.schedule .col-wrap li.item:nth-child(1) a,.schedule .col-wrap li.item:nth-child(2) a,.schedule .col-wrap li.item:nth-child(3) a,section.schedule-music .col-wrap li.item:nth-child(1) a,section.schedule-music .col-wrap li.item:nth-child(2) a,section.schedule-music .col-wrap li.item:nth-child(3) a{border-bottom:2px solid rgba(255,255,255,0.15);background-color:rgba(255,255,255,0.1)}
 .schedule .col-wrap li.music a,.schedule .col-wrap li.highlight a,section.schedule-music .col-wrap li.music a,section.schedule-music .col-wrap li.highlight a{background-color:#ff0}
 .schedule .col-wrap li.music a .title,.schedule .col-wrap li.highlight a .title,section.schedule-music .col-wrap li.music a .title,section.schedule-music .col-wrap li.highlight a .title{color:#000;font-family:"TuckfestHand",sans-serif}
 .schedule .col-wrap li.music a .time,.schedule .col-wrap li.highlight a .time,section.schedule-music .col-wrap li.music a .time,section.schedule-music .col-wrap li.highlight a .time{color:#000}

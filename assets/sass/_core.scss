@@ -2065,6 +2065,13 @@ section.schedule-music {
         float: left;
         color:#fff;
         border-bottom: 3px solid #000;
+        // &:nth-child(1) {
+        //   background-color: rgba(#fff, .1);
+        // }
+        &:nth-child(1) a, &:nth-child(2) a, &:nth-child(3) a {
+          border-bottom: 2px solid rgba(#fff, .15);
+          background-color: rgba(#fff, .1);
+        }
       }
       // &.clinics a {
       //   background-color: $orange;
