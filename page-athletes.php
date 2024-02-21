@@ -15,6 +15,23 @@ if($soon !== 'soon') :
 <?php get_template_part('parts/hero-subpage'); ?>
 <div id="primary" class="content-area default-template">
 
+
+  <section class="anchors">
+    <ul>
+      <li>//</li>
+      <li>
+        <a href="#deep-water-solo">Deep Water Solo</a>
+      </li>
+      <li>
+        <a href="#boatercross">Boatercross</a>
+      </li>
+      <li>
+        <a href="#dirty-crit">Dirty Crit</a>
+      </li>
+      <li>//</li>
+    </ul>
+  </section>
+
   <main id="main" class="site-main">
     <?php while ( have_posts() ) : the_post(); ?>
       <?php if ( get_the_content() ) { ?>
@@ -40,7 +57,7 @@ if($soon !== 'soon') :
       )
 		));
       if( $wp_query->have_posts() ) { ?>
-      <div class="repeatable-content-blocks">
+      <div class="repeatable-content-blocks" id="dirty-crit">
         <div class="wrapper">
           <header class="entry-title">
             <h2>Dirty Crit</h2>
@@ -69,7 +86,7 @@ if($soon !== 'soon') :
       )
     ));
       if( $wp_query->have_posts() ) { ?>
-      <div class="repeatable-content-blocks">
+      <div class="repeatable-content-blocks" id="deep-water-solo">
         <div class="wrapper">
           <header class="entry-title">
             <h2>Deep Water Solo</h2>
@@ -98,7 +115,7 @@ if($soon !== 'soon') :
       )
     ));
       if( $wp_query->have_posts() ) { ?>
-      <div class="repeatable-content-blocks">
+      <div class="repeatable-content-blocks" id="boatercross">
         <div class="wrapper">
           <header class="entry-title">
             <h2>Boatercross</h2>
