@@ -1138,6 +1138,7 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 1.2em;
+    z-index: 10;
     *:last-child {
       margin-bottom: 0;
     }
@@ -2911,6 +2912,7 @@ section.registration-boxes {
   width: 100%;
   margin: 60px auto 60px auto;
   text-align: center;
+  clear: both;
   h2 {
     color: $color_link;
     font-family: TuckfestHand;
