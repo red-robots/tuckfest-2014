@@ -28,8 +28,9 @@ $soon = ( isset($comingSoon[0]) ) ? $comingSoon[0] : '';
         <div class="wrapper">
         	<div class="spotify-wrap">
             
-        		  <?php the_content(); ?>
+        		  
         		  <?php echo do_shortcode('[feeds post="music"  perpage="-1"  filter="music_day"]'); ?>
+              <?php the_content(); ?>
             
         	</div>
           
