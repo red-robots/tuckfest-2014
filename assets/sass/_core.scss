@@ -2084,6 +2084,7 @@ section.schedule-music {
       // }
       &.music a, &.highlight a {
         background-color: $color_link;
+        flex-wrap: nowrap;
         .title {
           color: #000;
           font-family: $tuckfest_hand;
@@ -2115,7 +2116,7 @@ section.schedule-music {
       color: #fff;
       background-color: $secondary;
       display: flex;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-items: center;
       text-decoration: none;
       padding: 15px;
