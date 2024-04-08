@@ -2084,7 +2084,7 @@ section.schedule-music {
       // }
       &.music a, &.highlight a {
         background-color: $color_link;
-        flex-wrap: nowrap;
+        
         .title {
           color: #000;
           font-family: $tuckfest_hand;
@@ -2092,6 +2092,9 @@ section.schedule-music {
         .time {
           color: #000;
         }
+      }
+      &.music a {
+        flex-wrap: nowrap;
       }
       // &.bike a, &.trail-run a, &.raft a, &.adventure-obstacle a, &.deep-water-solo a, &.swim a, &.kayak a, &.sup a, &.climb a {
       //   background-color: #EB8B01;
