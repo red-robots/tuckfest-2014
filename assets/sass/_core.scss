@@ -1947,6 +1947,7 @@ span.gray, span.red, span.orange {
       font-family: TuckfestHand;
     }
     .musicnote {
+      min-width: 30px;
       width: 30px;
       display: inline-block;
       img {
@@ -2114,7 +2115,7 @@ section.schedule-music {
       color: #fff;
       background-color: $secondary;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
       text-decoration: none;
       padding: 15px;

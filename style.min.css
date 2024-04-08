@@ -1651,7 +1651,7 @@ span.gray,span.red,span.orange{width:100%}
 .schedule{-ms-flex-wrap:wrap;flex-wrap:wrap;padding-bottom:40px;min-height:20em}
 .schedule .col{-ms-flex-preferred-size:100%;flex-basis:100%;text-align:left}
 .schedule .col h2{width:100%;text-align:center;margin:0 0 20px 0;font-size:20px;font-weight:normal;color:#ff0;text-transform:uppercase;font-family:TuckfestHand}
-.schedule .col .musicnote{width:30px;display:inline-block}
+.schedule .col .musicnote{min-width:30px;width:30px;display:inline-block}
 .schedule .col .musicnote img{width:100%;-webkit-filter:invert(1);filter:invert(1)}
 .schedule .col .mis{width:auto;display:inline-block;margin-left:10px}
 .schedule .col .title{width:auto;display:inline-block;padding:0}
@@ -1677,7 +1677,7 @@ section.schedule-music .col{-ms-flex-preferred-size:22%;flex-basis:22%}
 .schedule .col-wrap li.music a .time,.schedule .col-wrap li.highlight a .time,section.schedule-music .col-wrap li.music a .time,section.schedule-music .col-wrap li.highlight a .time{color:#000}
 .schedule ul,section.schedule-music ul{margin:0;padding:0}
 .schedule ul li,section.schedule-music ul li{margin:0;padding:0}
-.schedule ul a,section.schedule-music ul a{color:#fff;background-color:#000;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none;padding:15px;-webkit-box-shadow:0 0 15px 10px rgba(0,0,0,0) inset;box-shadow:0 0 15px 10px rgba(0,0,0,0) inset}
+.schedule ul a,section.schedule-music ul a{color:#fff;background-color:#000;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none;padding:15px;-webkit-box-shadow:0 0 15px 10px rgba(0,0,0,0) inset;box-shadow:0 0 15px 10px rgba(0,0,0,0) inset}
 .schedule ul a div.time,section.schedule-music ul a div.time{width:100%}
 .schedule ul a *,section.schedule-music ul a *{text-decoration:none}
 .schedule ul a:hover,section.schedule-music ul a:hover{opacity:.8}
