@@ -1576,7 +1576,7 @@ body.page-template-page-athletes .content-block{-webkit-box-align:center;-ms-fle
 .repeatable-content-blocks .content-block .rb_title span{display:inline-block;padding:4px 0;line-height:1.1;position:relative}
 .repeatable-content-blocks .content-block .rb_title span b{font-weight:500;display:inline-block;position:relative;z-index:10}
 .repeatable-content-blocks .content-block .rb_content{font-family:"BrandonReg",sans-serif;font-weight:normal}
-.repeatable-content-blocks .content-block .rb_content ul{margin:0 0 10px 20px}
+.repeatable-content-blocks .content-block .rb_content ul{margin:0 0 3em 20px}
 .repeatable-content-blocks .content-block .rb_content *:last-child{margin-bottom:0}
 .lefty h2{display:none}
 .righty div.img{width:100%}
