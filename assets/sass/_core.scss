@@ -1286,6 +1286,13 @@ body.page-template-page-athletes {
       flex-direction: row;
       align-content: flex-start;
     }
+    .image-above {
+      width: 100%;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+    }
     h2 {
       margin-bottom: 10px;
       font-family: $font_heading;
