@@ -59,10 +59,10 @@ if($soon !== 'soon') :
       </section>
       <?php //} ?>
 
-      <?php if( have_rows('repeatable_block') ) { ?>
+      <?php if( have_rows('repeatable_block_x') ) { ?>
       <div class="repeatable-content-blocks">
         <div class="wrapper">
-        <?php $n=1; while ( have_rows('repeatable_block') ) : the_row(); 
+        <?php $n=1; while ( have_rows('repeatable_block_x') ) : the_row(); 
           $image_above_title = get_sub_field('image_above_title');
           $title = get_sub_field('title');
           $sani = sanitize_title_with_dashes($title);
