@@ -7,8 +7,9 @@
 	<div id="mc_embed_signup">
 	    <form action="https://whitewater.us17.list-manage.com/subscribe/post?u=621991427ab3dab6fe3576a60&amp;id=3c8fcb087c&amp;f_id=0013e5e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 	        <div id="mc_embed_signup_scroll">
-	        	<h2><?php echo $email_title; ?></h2>
+	        	<h2><?php //echo $email_title; ?>Sign up for Tuck Fest Updates</h2>
 	        	<?php if( $email_description ){ ?><p><?php echo $email_description; ?></p><?php } ?>
+	        	<p></p>
 	            
 	            	<input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email..." required="" value="">
 	           		<input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">

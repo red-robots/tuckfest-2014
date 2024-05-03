@@ -11,13 +11,20 @@ get_header();
 get_template_part('inc/coming-soon');
 $comingSoon = get_field('coming_soon');
 $soon = ( isset($comingSoon[0]) ) ? $comingSoon[0] : '';
-  if($soon !== 'soon') { ?>
+ ?>
 
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
 
+      <?php if($soon == 'soon') { ?>
+              <section class="entry-content ">
+                <?php include( locate_template('parts/mc-signup.php') ); ?>
+              </section>
+          <?php  } else {  ?>
+
 			<?php
 			while ( have_posts() ) : the_post(); 
+        
         //get_template_part('inc/special-title');
         get_template_part('parts/hero-subpage'); ?>
         <section class="entry-content page-content">
@@ -76,10 +83,10 @@ $soon = ( isset($comingSoon[0]) ) ? $comingSoon[0] : '';
 
         </div>
       </div>
-
+    <?php } ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
   <?php
-}
+
 // get_sidebar();
 get_footer();
