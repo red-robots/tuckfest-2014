@@ -19,10 +19,10 @@ if( is_page( array('athletes', 'deep-water-solo-wildcard-application') ) ) {
 if($banner_visibility=='on' && $banner_image) { ?>
 <div class="banner-subpage">
   <div class="banner-image desktop" >
-    <img src="<?php echo $banner_image['url'] ?>">
+    <img src="<?php echo $banner_image['url']; ?>">
   </div>
   <div class="banner-image mobile" >
-    <img src="<?php echo $home_banner_mobile['url'] ?>">
+    <img src="<?php echo $home_banner_mobile['url']; ?>">
   </div>
   <?php if($button=='on' && ($btnText && $btnLink) ) { ?>
   <div class="register-button"><a href="<?php echo $btnLink ?>" target="<?php echo $btnTarget ?>" class=""><span><?php echo $btnText ?></span></a></div>

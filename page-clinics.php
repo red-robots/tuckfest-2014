@@ -37,7 +37,8 @@ if($soon !== 'soon') :?>
       'post_type'=>$posttype,
       'posts_per_page' => -1,
       'paged' => $paged,
-      'facetwp' => true
+      'facetwp' => true,
+      // 'post__not_in' => 
     ));
 
     //$terms['demo_clinic_type'] = getPostTerms($posttype,'demo_clinic_type',array('name','ASC'));
@@ -74,7 +75,9 @@ if($soon !== 'soon') :?>
       <div class="repeatable-content-blocks">
         <div class="wrapper">
           <?php while ($wp_query->have_posts()) : $wp_query->the_post(); $i++; ?>
-            <?php include( locate_template('inc/loop-post.php', false, false)); ?>
+            <?php if( get_the_ID() !== 2131 ) { // if not the duplicate Teva page... ?>
+              <?php include( locate_template('inc/loop-post.php', false, false)); ?>
+            <?php } ?>
           <?php endwhile; ?>
         </div>
       </div>
