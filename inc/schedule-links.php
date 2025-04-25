@@ -12,6 +12,14 @@
 				}
 			}
 
+			$yogaactivity = get_the_terms($post_id, 'yoga_type');
+			if($yogaactivity) {
+				foreach( $yogaactivity as $act ) {
+					$act = $act->slug;
+					$classes .= ' ' . $act;
+				}
+			}
+
 			if( $postType == 'music' ) {
 				$classes .= ' music';
 			}
@@ -26,6 +34,8 @@
   				foreach ( $termz as $t ) {
   					$classes .= ' '.$t->slug;
   				}
+
+
         }
 				// $classes .= $post_id;
 			}
